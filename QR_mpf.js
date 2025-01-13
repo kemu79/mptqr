@@ -115,7 +115,7 @@ function EFS_PrintQR() {
 function EFS_CopyQR(cid,sL) {	
 	try {
 		var range = document.createRange();range.selectNode(document.getElementById(cid));window.getSelection().removeAllRanges();window.getSelection().addRange(range); document.execCommand("copy");window.getSelection().removeAllRanges();
-		if (sL="de") alert("QR-Code wurde in die Zwischenablage kopiert. ");
+		if (sL=="de") alert("QR-Code wurde in die Zwischenablage kopiert. ");
 		else alert("QR-Code copied to clipboard. ");
 
 	} catch (e) {alert(e);}
